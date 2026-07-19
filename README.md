@@ -2,7 +2,11 @@
 
 ## Forged in the Mountains. Made to Last.
 
-Ironwood Creative Studio is an Appalachian-rooted creative studio specializing in branding, web design, and visual identity systems built with craftsmanship, strategy, and purpose.
+Ironwood Creative Studio is an Appalachian-rooted creative studio specializing in branding, web design, and visual identity systems, and creative strategy.
+
+We help businesses build authentic brands through thoughtful design, craftsmanship, and purpose-driven storytelling.
+
+
 
 ## Services
 
@@ -11,6 +15,8 @@ Logo Development
 Web Design
 Marketing Materials
 Creative Strategy
+
+
 
 ## Core Values
 
@@ -21,12 +27,21 @@ Hands-On
 Reliable
 Appalachian-Rooted
 
-## Website
 
-Coming Soon
+
+## Featured Projects
+
+### Appalachian Timber Co.
+A branding project inspired by Appalachian craftsmanship, heritage, and enduring quality.
+
+More projects coming soon
+
+
 
 ## Contact
 
 Website: Coming Soon
 
 Email: joshua.mitchell11@snhu.edu
+
+Location: West Virginia, USA
