@@ -1,6 +1,8 @@
 {
   "name": "ironwood-creative-studio",
   "version": "1.0.0",
+  "private": true,
+  "description": "Appalachian-rooted creative studio specializing in branding, web design, and visual identity systems",
   "description": "Ironwood Creative Studio - Appalachian-rooted creative studio",
   "private": true,
   "scripts": {
@@ -10,6 +12,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^2.0.0",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-next": "^14.0.0"
     "next": "^14.2.0",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
