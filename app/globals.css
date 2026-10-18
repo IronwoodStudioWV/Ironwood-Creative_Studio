@@ -1,10 +1,16 @@
 :root {
-  --primary: #2b2b2b;
-  --secondary: #3d3d3d;
-  --accent: #d4a574;
-  --white: #f5f5f5;
-  --light-gray: #e0e0e0;
-  --text: #333;
+  --charcoal: #100D0A;
+  --walnut: #4A2E1B;
+  --bronze: #8B5A2B;
+  --tan: #C9A66B;
+  --cream: #F3EAD8;
+  --primary: #100D0A;
+  --secondary: #4A2E1B;
+  --accent: #8B5A2B;
+  --accent-light: #C9A66B;
+  --white: #F3EAD8;
+  --light-gray: #e4d9c8;
+  --text: #2a211a;
 }
 
 * {
@@ -24,7 +30,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--text);
-  background-color: var(--white);
+  background-color: var(--cream);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,4 +47,9 @@ button {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
