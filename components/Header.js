@@ -15,7 +15,7 @@ export default function Header() {
           <Link href="/">
             <div className={styles.logoImage}>
               <Image
-                src="/images/ironwood-logo.png"
+                src="/images/ironwood-badge.png"
                 alt="Ironwood Creative Studio Logo"
                 width={60}
                 height={60}
@@ -30,6 +30,8 @@ export default function Header() {
         </div>
         <nav className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
           <Link href="#services" onClick={() => setIsOpen(false)}>Services</Link>
+          <Link href="#creatures" onClick={() => setIsOpen(false)}>Creatures</Link>
+          <Link href="#work" onClick={() => setIsOpen(false)}>Work</Link>
           <Link href="#about" onClick={() => setIsOpen(false)}>About</Link>
           <Link href="#contact" onClick={() => setIsOpen(false)}>Contact</Link>
         </nav>
