@@ -20,6 +20,14 @@ export default function Hero() {
           <h1>Forged in the Mountains</h1>
           <h2>Made to Last</h2>
           <p>Appalachian-rooted branding, web design, and creative solutions built with craftsmanship and purpose.</p>
+          <div className={styles.ctaRow}>
+            <button className={styles.cta}>
+              <a href="#contact">Start a Project</a>
+            </button>
+            <button className={styles.ctaGhost}>
+              <a href="#creatures">See the Creatures</a>
+            </button>
+          </div>
           <button className={styles.cta}>
             <a href="#contact">Start Your Project</a>
           </button>
