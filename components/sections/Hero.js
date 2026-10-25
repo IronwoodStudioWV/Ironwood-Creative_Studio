@@ -28,9 +28,6 @@ export default function Hero() {
               <a href="#creatures">See the Creatures</a>
             </button>
           </div>
-          <button className={styles.cta}>
-            <a href="#contact">Start Your Project</a>
-          </button>
         </div>
       </div>
     </section>
