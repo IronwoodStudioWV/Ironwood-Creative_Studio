@@ -29,11 +29,12 @@ export default function Header() {
           </Link>
         </div>
         <nav className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
-          <Link href="#services" onClick={() => setIsOpen(false)}>Services</Link>
-          <Link href="#creatures" onClick={() => setIsOpen(false)}>Creatures</Link>
-          <Link href="#work" onClick={() => setIsOpen(false)}>Work</Link>
-          <Link href="#about" onClick={() => setIsOpen(false)}>About</Link>
-          <Link href="#contact" onClick={() => setIsOpen(false)}>Contact</Link>
+          <Link href="/#services" onClick={() => setIsOpen(false)}>Services</Link>
+          <Link href="/#creatures" onClick={() => setIsOpen(false)}>Creatures</Link>
+          <Link href="/apple-of-my-eye" onClick={() => setIsOpen(false)}>Apple of My Eye</Link>
+          <Link href="/#work" onClick={() => setIsOpen(false)}>Work</Link>
+          <Link href="/#about" onClick={() => setIsOpen(false)}>About</Link>
+          <Link href="/#contact" onClick={() => setIsOpen(false)}>Contact</Link>
         </nav>
         <button 
           className={styles.hamburger} 

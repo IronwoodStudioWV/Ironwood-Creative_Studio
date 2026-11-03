@@ -30,6 +30,67 @@
   max-width: 65ch;
 }
 
+.featured {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  background: #1b4a57;
+  border: 3px solid #100d0a;
+  border-radius: 12px;
+  box-shadow: 6px 6px 0 #e5322d;
+  padding: 1.25rem;
+  margin-bottom: 3rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featured:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 9px 9px 0 #e5322d;
+}
+
+.featuredImage {
+  border-radius: 8px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.featuredImage img {
+  width: 100%;
+  height: auto;
+}
+
+.featuredTag {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffd23f;
+  margin-bottom: 0.4rem;
+}
+
+.featuredText h3 {
+  font-size: 2rem;
+  color: var(--cream);
+  margin-bottom: 0.6rem;
+}
+
+.featuredText p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--cream);
+}
+
+.featuredCta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.1rem;
+  background: #e5322d;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 999px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -75,6 +136,12 @@
 
 .originLink:hover {
   color: #fff;
+}
+
+@media (max-width: 900px) {
+  .featured {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 700px) {

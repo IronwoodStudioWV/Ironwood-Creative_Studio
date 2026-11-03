@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './Creatures.module.css';
 
 const creatures = [
@@ -14,13 +15,19 @@ const creatures = [
     src: '/images/bad-apple.jpg',
     alt: 'Bad Apple — a grumpy half-eaten apple core character in boxing gloves',
     name: 'Bad Apple',
-    text: 'A bruised apple core in boxing gloves, ready for a fight. Started as a doodle on my wife Tessie\u2019s leg early in our relationship — she kept it, and I kept drawing.',
+    text: 'A bruised apple core in boxing gloves, ready for a fight. Started as a doodle on my wife Tessie\u2019s leg early in our relationship — she kept it, and I kept drawing. Today he’s Bart, the gnawed-down, permanently snarling dad of my animated series Apple of My Eye.',
+    link: '/apple-of-my-eye',
+    linkLabel: 'Meet the whole family →',
+    internal: true,
   },
   {
     src: '/images/bad-seed.jpg',
-    alt: 'Bad Seed — a smug rotten pear character shown in rendered and line-art styles side by side',
+    alt: 'Bad Seed — a smug, mold-spotted character with one finger raised, shown in rendered and line-art styles side by side',
     name: 'Bad Seed',
-    text: 'My son heard his mom was Bad Apple and figured that made him a bad seed. I heard him say it and had the character drawn in under ten minutes — shown here in both rendered and line-art styles.',
+    text: 'My son heard the Bad Apple stories and figured that made him a bad seed. I heard him say it and had the character drawn in under ten minutes — shown here in both rendered and line-art styles. In Apple of My Eye, he’s Bart’s spitfire oldest son, with one finger always raised.',
+    link: '/apple-of-my-eye',
+    linkLabel: 'See him in the show →',
+    internal: true,
   },
   {
     src: '/images/dusty.jpg',
@@ -52,6 +59,26 @@ export default function Creatures() {
           Original characters and mascots — the work Ironwood is known for.
           Every business deserves a face. These are ours.
         </p>
+        <Link href="/apple-of-my-eye" className={styles.featured}>
+          <div className={styles.featuredImage}>
+            <Image
+              src="/apple-of-my-eye/cast-banner.jpg"
+              alt="Apple of My Eye — the cast: Granny Smith, Honeycrisp, Bad Apple, Bad Seed, Pip, and Pickle the worm"
+              width={1280}
+              height={720}
+              sizes="(max-width: 900px) 100vw, 560px"
+            />
+          </div>
+          <div className={styles.featuredText}>
+            <p className={styles.featuredTag}>New &middot; Original series</p>
+            <h3>Apple of My Eye</h3>
+            <p>
+              A dysfunctional family of fruit, a worm on a leash, and a grandma
+              with an eyeball for a head. Watch the trailer and meet the cast.
+            </p>
+            <span className={styles.featuredCta}>Watch the trailer &rarr;</span>
+          </div>
+        </Link>
         <div className={styles.grid}>
           {creatures.map((c) => (
             <article key={c.name} className={styles.card}>
@@ -66,7 +93,12 @@ export default function Creatures() {
               </div>
               <h3>{c.name}</h3>
               <p>{c.text}</p>
-              {c.link && (
+              {c.link && c.internal && (
+                <Link href={c.link} className={styles.originLink}>
+                  {c.linkLabel}
+                </Link>
+              )}
+              {c.link && !c.internal && (
                 <a href={c.link} target="_blank" rel="noopener noreferrer" className={styles.originLink}>
                   {c.linkLabel}
                 </a>
