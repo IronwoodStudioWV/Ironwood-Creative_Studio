@@ -92,8 +92,7 @@ const cast = [
     accent: '#ffd23f',
     src: '/apple-of-my-eye/pip.png',
     alt: 'Pip, a glossy seed covered in sprinkles holding a slingshot',
-    text: 'A glossy seed with sprinkles, a slingshot, and a plan. She isn’t in the pilot, but she’s coming.',
-    note: 'Not in the pilot',
+    text: 'A glossy seed with sprinkles, a slingshot, and a plan. Bad Seed’s little sister is small, sweet-voiced, and armed.',
   },
 ];
 
@@ -142,7 +141,8 @@ export default function AppleOfMyEyePage() {
               Somewhere in the crisper drawer of a refrigerator, a rotten family keeps up appearances.
               Bad Apple slouches on an egg-carton sofa, Bad Seed tracks moss across the floor with Pickle
               on a leash, and Honeycrisp frets about the crisper inspection and the dreaded citrus
-              spray. Granny Smith watches over all of it, and she is not impressed.
+              spray. Pip hides in the sofa cushions with a slingshot. Granny Smith watches over all of
+              it, and she is not impressed.
             </p>
             <p className={styles.pilotText}>
               Then the drawer creaks, a ray of kitchen light cuts through the frosted glass, and a
