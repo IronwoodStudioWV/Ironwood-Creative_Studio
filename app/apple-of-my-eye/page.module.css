@@ -1,0 +1,439 @@
+/* Apple of My Eye — show page.
+   Playful cartoon styling scoped to this page; the Ironwood header and footer stay as-is. */
+
+.page {
+  --red: #e5322d;
+  --yellow: #ffd23f;
+  --ink: #0e0e0e;
+  --paper: #fff6e0;
+  --teal-1: #2a6475;
+  --teal-2: #174252;
+  --teal-3: #0d2530;
+
+  color: var(--paper);
+  background:
+    radial-gradient(circle at 50% -10%, var(--teal-1) 0%, var(--teal-2) 38%, var(--teal-3) 100%);
+  overflow-x: clip;
+}
+
+.display,
+.title,
+.sectionTitle,
+.name {
+  font-family: 'Arial Black', 'Impact', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 4rem;
+  text-align: center;
+}
+
+.kicker,
+.sectionKicker {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--yellow);
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-family: 'Arial Black', 'Impact', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(3.2rem, 11vw, 7.5rem);
+  line-height: 0.95;
+  letter-spacing: -1px;
+  color: var(--red);
+  text-shadow:
+    -5px -5px 0 var(--ink), 5px -5px 0 var(--ink), -5px 5px 0 var(--ink), 5px 5px 0 var(--ink),
+    0 -5px 0 var(--ink), 0 5px 0 var(--ink), -5px 0 0 var(--ink), 5px 0 0 var(--ink),
+    0 9px 0 var(--ink);
+  margin-bottom: 1.5rem;
+}
+
+.tagline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem 1rem;
+  font-family: 'Arial Black', 'Impact', Arial, sans-serif;
+  font-weight: 900;
+  font-size: clamp(1rem, 2.6vw, 1.5rem);
+  text-transform: uppercase;
+  color: var(--paper);
+  margin-bottom: 2.5rem;
+}
+
+.pill {
+  display: inline-block;
+  background: var(--yellow);
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  transform: rotate(-2deg);
+}
+
+.videoFrame {
+  border: 5px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 10px 10px 0 var(--red);
+  background: var(--ink);
+  overflow: hidden;
+  line-height: 0;
+}
+
+.video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: var(--ink);
+}
+
+/* ---------- Pilot ---------- */
+
+.pilot {
+  background: rgba(8, 24, 31, 0.55);
+  border-top: 4px solid var(--ink);
+  border-bottom: 4px solid var(--ink);
+  padding: 4.5rem 1.5rem;
+}
+
+.pilotInner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-family: 'Arial Black', 'Impact', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(1.9rem, 5vw, 3rem);
+  line-height: 1.05;
+  color: var(--paper);
+  text-shadow: 3px 3px 0 var(--ink);
+  margin-bottom: 1.5rem;
+}
+
+.pilotText {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: var(--paper);
+  margin-bottom: 1.25rem;
+}
+
+.quote {
+  margin-top: 2rem;
+  padding: 1.5rem 1.75rem;
+  background: var(--paper);
+  color: var(--ink);
+  border: 4px solid var(--ink);
+  border-radius: 16px;
+  box-shadow: 7px 7px 0 var(--yellow);
+  transform: rotate(-1deg);
+}
+
+.quote p {
+  font-family: 'Arial Black', 'Impact', Arial, sans-serif;
+  font-weight: 900;
+  font-size: clamp(1.15rem, 3vw, 1.6rem);
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.quote footer {
+  margin-top: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #6a1815;
+}
+
+/* ---------- Cast ---------- */
+
+.castSection {
+  padding: 5rem 1.5rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.castGrid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.card {
+  --accent: var(--yellow);
+  background: var(--paper);
+  color: var(--ink);
+  border: 4px solid var(--ink);
+  border-radius: 18px;
+  box-shadow: 8px 8px 0 var(--ink);
+  padding: 1rem 1rem 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:nth-child(odd) {
+  transform: rotate(-1deg);
+}
+
+.card:nth-child(even) {
+  transform: rotate(1deg);
+}
+
+.card:hover {
+  transform: rotate(0deg) translateY(-4px);
+  box-shadow: 8px 12px 0 var(--ink);
+}
+
+.stage {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border: 3px solid var(--ink);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  background:
+    radial-gradient(circle at 50% 55%, var(--accent) 0%, var(--accent) 38%, transparent 39%),
+    linear-gradient(180deg, #2a6475 0%, #174252 100%);
+  overflow: hidden;
+}
+
+.stage img {
+  padding: 0.75rem;
+}
+
+.note {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  background: var(--yellow);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transform: rotate(3deg);
+}
+
+.role {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 0.15rem 0.7rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.name {
+  font-family: 'Arial Black', 'Impact', Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.aka {
+  display: block;
+  margin-top: 0.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #4b3a2a;
+}
+
+.blurb {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #231a12;
+}
+
+/* ---------- Still ---------- */
+
+.stillSection {
+  padding: 0 1.5rem 5rem;
+}
+
+.still {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.still img {
+  display: block;
+  border: 5px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 10px 10px 0 var(--yellow);
+}
+
+.still figcaption {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-style: italic;
+  color: var(--paper);
+  opacity: 0.9;
+}
+
+/* ---------- CTA ---------- */
+
+.cta {
+  background: var(--red);
+  border-top: 5px solid var(--ink);
+  padding: 4.5rem 1.5rem;
+  text-align: center;
+}
+
+.ctaInner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.cta .sectionTitle {
+  color: #fff;
+  text-shadow: 4px 4px 0 var(--ink);
+}
+
+.ctaText {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.buttonPrimary,
+.buttonGhost {
+  display: inline-block;
+  font-family: 'Arial Black', 'Impact', Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.5rem;
+  border: 4px solid var(--ink);
+  border-radius: 999px;
+  box-shadow: 5px 5px 0 var(--ink);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.buttonPrimary {
+  background: var(--yellow);
+  color: var(--ink);
+}
+
+.buttonGhost {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.buttonPrimary:hover,
+.buttonGhost:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0 var(--ink);
+}
+
+.fine {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.fine a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 700;
+}
+
+/* ---------- Focus + motion ---------- */
+
+.page a:focus-visible,
+.page video:focus-visible {
+  outline: 4px solid var(--yellow);
+  outline-offset: 3px;
+}
+
+.cta a:focus-visible {
+  outline-color: var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .buttonPrimary,
+  .buttonGhost {
+    transition: none;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 980px) {
+  .castGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 3rem 1.25rem 3rem;
+  }
+
+  .videoFrame {
+    box-shadow: 6px 6px 0 var(--red);
+  }
+
+  .castGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .castSection,
+  .pilot,
+  .cta {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .stillSection {
+    padding: 0 1.25rem 4rem;
+  }
+}
