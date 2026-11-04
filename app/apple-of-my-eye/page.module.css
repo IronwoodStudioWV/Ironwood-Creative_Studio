@@ -162,6 +162,67 @@
   color: #6a1815;
 }
 
+/* ---------- Episodes ---------- */
+
+.episodes {
+  padding: 5rem 1.5rem 1rem;
+}
+
+.episodeGrid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.episodeCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: var(--paper);
+  color: var(--ink);
+  border: 4px solid var(--ink);
+  border-radius: 16px;
+  box-shadow: 6px 6px 0 var(--yellow);
+  padding: 1.25rem;
+}
+
+.episodeNum {
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6a1815;
+}
+
+.episodeTitle {
+  font-family: 'Arial Black', 'Impact', Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.15rem;
+  line-height: 1.15;
+}
+
+.episodeBlurb {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #231a12;
+  flex: 1;
+}
+
+.episodeStatus {
+  align-self: flex-start;
+  background: var(--yellow);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 0.15rem 0.7rem;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 /* ---------- Cast ---------- */
 
 .castSection {
@@ -408,12 +469,25 @@
 /* ---------- Responsive ---------- */
 
 @media (max-width: 980px) {
+  .episodeGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .castGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 640px) {
+  .episodeGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .episodes {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .hero {
     padding: 3rem 1.25rem 3rem;
   }

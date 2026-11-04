@@ -39,6 +39,13 @@ export const metadata = {
 // Example: { label: 'Instagram', href: 'https://www.instagram.com/your_handle' }
 const socials = [{ label: 'Instagram', href: 'https://www.instagram.com/ironwood_creative_studio' }];
 
+const episodes = [
+  { num: 'Pilot', title: 'The Apple Doesn’t Fall Far', status: 'Premiering here first', blurb: 'The rotten family meets the five-fingered shadow.' },
+  { num: 'Episode 1', title: 'The Five-Finger Death Pull', status: 'Coming soon', blurb: 'The giant hand reaches in. Pip, a cat, and a drain are involved.' },
+  { num: 'Episode 2', title: null, status: 'Coming soon', blurb: 'More chaos from the back of the fridge.' },
+  { num: 'Episode 3', title: null, status: 'Coming soon', blurb: 'The door rack standoff.' },
+];
+
 const cast = [
   {
     name: 'Bad Apple',
@@ -156,6 +163,26 @@ export default function AppleOfMyEyePage() {
           </div>
         </section>
 
+        {/* Episodes */}
+        <section className={styles.episodes} aria-labelledby="episodes-heading">
+          <div className={styles.container}>
+            <p className={styles.sectionKicker}>Watch here</p>
+            <h2 id="episodes-heading" className={styles.sectionTitle}>
+              Episodes
+            </h2>
+            <ul className={styles.episodeGrid}>
+              {episodes.map((e) => (
+                <li key={e.num} className={styles.episodeCard}>
+                  <p className={styles.episodeNum}>{e.num}</p>
+                  <h3 className={styles.episodeTitle}>{e.title ? `“${e.title}”` : 'Title coming soon'}</h3>
+                  <p className={styles.episodeBlurb}>{e.blurb}</p>
+                  <span className={styles.episodeStatus}>{e.status}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
         {/* Cast */}
         <section className={styles.castSection} aria-labelledby="cast-heading">
           <div className={styles.container}>
@@ -206,10 +233,11 @@ export default function AppleOfMyEyePage() {
         <section className={styles.cta} aria-labelledby="cta-heading">
           <div className={styles.ctaInner}>
             <h2 id="cta-heading" className={styles.sectionTitle}>
-              Follow the series
+              New episodes land here first
             </h2>
             <p className={styles.ctaText}>
-              Trailers, character art, and behind-the-scenes work as the pilot comes together.
+              Every episode premieres on this site. Follow the studio on Instagram to hear when a new
+              one drops.
             </p>
             <div className={styles.buttons}>
               {socials.map((s) => (
