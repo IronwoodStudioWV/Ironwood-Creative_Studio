@@ -42,17 +42,17 @@ const socials = [];
 const cast = [
   {
     name: 'Bad Apple',
-    aka: 'Bart',
+    aka: 'a.k.a. Bart',
     role: 'The grumpy head of the family',
     accent: '#e63232',
     src: '/apple-of-my-eye/bad-apple.png',
     alt: 'Bad Apple, a chewed-down apple core with a permanent snarl, work boots and clenched fists',
-    text: 'A rugged, chewed-down apple core with a permanent snarl, brown work boots, and a bad attitude. Bart thinks he runs the household. Real fruit holds its ground.',
+    text: 'A rugged, chewed-down apple core with a permanent snarl, brown work boots, and a bad attitude. He thinks he runs the household. Real fruit holds its ground.',
   },
   {
     name: 'Honeycrisp',
     aka: 'Honey',
-    role: 'Bart’s wife',
+    role: 'Bad Apple’s wife',
     accent: '#ff8a3d',
     src: '/apple-of-my-eye/honeycrisp.png',
     alt: 'Honeycrisp, a tired but polished apple in an apron holding a sponge',
@@ -60,7 +60,7 @@ const cast = [
   },
   {
     name: 'Bad Seed',
-    aka: 'Bart’s oldest son',
+    aka: 'Bad Apple’s oldest son',
     role: 'The spitfire',
     accent: '#8bc34a',
     src: '/apple-of-my-eye/bad-seed.png',
@@ -69,7 +69,7 @@ const cast = [
   },
   {
     name: 'Granny Smith',
-    aka: 'Bart’s mother',
+    aka: 'Bad Apple’s mother',
     role: 'She sees everything',
     accent: '#ff8fb8',
     src: '/apple-of-my-eye/granny-smith.png',
@@ -140,7 +140,7 @@ export default function AppleOfMyEyePage() {
             </h2>
             <p className={styles.pilotText}>
               Somewhere in the crisper drawer of a refrigerator, a rotten family keeps up appearances.
-              Bart slouches on an egg-carton sofa, Bad Seed tracks moss across the floor with Pickle
+              Bad Apple slouches on an egg-carton sofa, Bad Seed tracks moss across the floor with Pickle
               on a leash, and Honeycrisp frets about the crisper inspection and the dreaded citrus
               spray. Granny Smith watches over all of it, and she is not impressed.
             </p>
