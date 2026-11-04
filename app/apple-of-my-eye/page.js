@@ -37,7 +37,7 @@ export const metadata = {
 
 // Add the show's social links here and they appear in the "Follow the series" section.
 // Example: { label: 'Instagram', href: 'https://www.instagram.com/your_handle' }
-const socials = [];
+const socials = [{ label: 'Instagram', href: 'https://www.instagram.com/ironwood_creative_studio' }];
 
 const cast = [
   {
