@@ -23,12 +23,12 @@ export default function Header() {
               />
             </div>
             <div className={styles.logoText}>
-              <h1>Ironwood</h1>
+              <span className={styles.logoName}>Ironwood</span>
               <p>Creative Studio</p>
             </div>
           </Link>
         </div>
-        <nav className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
+        <nav id="site-nav" aria-label="Main" className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
           <Link href="/#services" onClick={() => setIsOpen(false)}>Services</Link>
           <Link href="/#creatures" onClick={() => setIsOpen(false)}>Creatures</Link>
           <Link href="/apple-of-my-eye" onClick={() => setIsOpen(false)}>Apple of My Eye</Link>
@@ -40,6 +40,8 @@ export default function Header() {
           className={styles.hamburger} 
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
+          aria-expanded={isOpen}
+          aria-controls="site-nav"
         >
           <span></span>
           <span></span>

@@ -62,6 +62,8 @@
 }
 
 .cta {
+  display: inline-block;
+  text-decoration: none;
   background-color: var(--accent);
   color: var(--primary);
   padding: 1rem 2.5rem;
@@ -80,12 +82,6 @@
   box-shadow: 0 8px 16px rgba(212, 165, 116, 0.3);
 }
 
-.cta a {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-}
-
 .ctaRow {
   display: flex;
   gap: 1rem;
@@ -94,6 +90,8 @@
 }
 
 .ctaGhost {
+  display: inline-block;
+  text-decoration: none;
   background: transparent;
   color: var(--cream);
   padding: 1rem 2.5rem;
@@ -110,12 +108,6 @@
 .ctaGhost:hover {
   background: rgba(201, 166, 107, 0.15);
   transform: translateY(-2px);
-}
-
-.ctaGhost a {
-  display: block;
-  color: inherit;
-  text-decoration: none;
 }
 
 @media (max-width: 768px) {

@@ -21,12 +21,8 @@ export default function Hero() {
           <h2>Made to Last</h2>
           <p>Appalachian-rooted branding, web design, and creative solutions built with craftsmanship and purpose.</p>
           <div className={styles.ctaRow}>
-            <button className={styles.cta}>
-              <a href="#contact">Start a Project</a>
-            </button>
-            <button className={styles.ctaGhost}>
-              <a href="#creatures">See the Creatures</a>
-            </button>
+            <a className={styles.cta} href="#contact">Start a Project</a>
+            <a className={styles.ctaGhost} href="#creatures">See the Creatures</a>
           </div>
         </div>
       </div>
