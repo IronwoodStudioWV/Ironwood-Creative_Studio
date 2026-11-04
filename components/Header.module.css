@@ -39,7 +39,8 @@
   align-items: flex-start;
 }
 
-.logoText h1 {
+.logoName {
+  font-weight: 700;
   font-size: 1.25rem;
   color: var(--primary);
   margin: 0;
