@@ -42,8 +42,8 @@ const socials = [{ label: 'Instagram', href: 'https://www.instagram.com/ironwood
 const episodes = [
   { num: 'Pilot', title: 'The Apple Doesn’t Fall Far', status: 'Premiering here first', blurb: 'The rotten family meets the five-fingered shadow.' },
   { num: 'Episode 1', title: 'The Five-Finger Death Pull', status: 'Coming soon', blurb: 'The giant hand reaches in. Pip, a cat, and a drain are involved.' },
-  { num: 'Episode 2', title: null, status: 'Coming soon', blurb: 'More chaos from the back of the fridge.' },
-  { num: 'Episode 3', title: null, status: 'Coming soon', blurb: 'The door rack standoff.' },
+  { num: 'Episode 2', title: 'Sub-Zero Heroes', status: 'Coming soon', blurb: 'More chaos from the back of the fridge.' },
+  { num: 'Episode 3', title: 'Door Rack High Society', status: 'Coming soon', blurb: 'The door rack standoff.' },
 ];
 
 const cast = [
@@ -160,6 +160,22 @@ export default function AppleOfMyEyePage() {
               <p>&ldquo;I see all. I see dirt. I see a disappointment.&rdquo;</p>
               <footer>Granny Smith</footer>
             </blockquote>
+
+            <h3 className={styles.teaserHeading}>Watch the pilot teaser</h3>
+            <div className={styles.videoFrame}>
+              <video
+                className={styles.video}
+                controls
+                playsInline
+                preload="metadata"
+                poster="/apple-of-my-eye/pilot-teaser-poster.jpg"
+                aria-label="Apple of My Eye pilot teaser"
+              >
+                <source src="/apple-of-my-eye/pilot-teaser.mp4" type="video/mp4" />
+                Your browser can&rsquo;t play this video.{' '}
+                <a href="/apple-of-my-eye/pilot-teaser.mp4">Download the teaser</a>.
+              </video>
+            </div>
           </div>
         </section>
 
