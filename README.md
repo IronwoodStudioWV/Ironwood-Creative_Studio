@@ -40,8 +40,15 @@ More projects coming soon
 
 ## Contact
 
-Website: ironwoodcreative.studio
+Website: [ironwoodcreativestudio.shop](https://ironwoodcreativestudio.shop)
 
 Email: joshua.mitchell11@snhu.edu
 
 Location: West Virginia, USA
+
+
+
+## License
+
+- **Code** (`app/`, `components/`, and configuration files): [MIT License](LICENSE).
+- **Creative assets** (everything in `public/`: logos, brand marks, characters, artwork, video, and portfolio images): © 2026 Joshua Mitchell / Ironwood Creative Studio, all rights reserved. See [LICENSE-ASSETS.md](LICENSE-ASSETS.md).
