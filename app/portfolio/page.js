@@ -20,7 +20,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/atc/final-board.png',
+        url: '/images/atc/final-board-og.jpg',
         width: 1536,
         height: 1024,
         alt: 'Appalachian Timber Co. final identity board',
@@ -31,7 +31,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: TITLE,
     description: DESCRIPTION,
-    images: ['/images/atc/final-board.png'],
+    images: ['/images/atc/final-board-og.jpg'],
   },
 };
 
@@ -183,6 +183,8 @@ export default function PortfolioPage() {
                 <div>
                   <h4>Brand promise</h4>
                   <p className={styles.body}>Premium Appalachian wood products crafted for homes built to last generations.</p>
+                  <h4>Tagline</h4>
+                  <p className={styles.body}>Rooted in Craft. Built for Generations.</p>
                   <h4>Audiences</h4>
                   <ul className={styles.list}>
                     <li><b>Luxury homeowners</b> (35–65) building or renovating custom homes</li>
@@ -252,10 +254,10 @@ export default function PortfolioPage() {
               <p className={styles.step}>05 · Final identity system</p>
               <h3 className={styles.blockTitle}>One system, everywhere it shows up.</h3>
               <Shot
-                src="/images/atc/final-board.png"
+                src="/images/atc/final-board-2026.png"
                 alt="Appalachian Timber Co. final identity board: logo system, monogram, clear space, palette, typography, brand elements, and applications"
-                width={1536}
-                height={1024}
+                width={3072}
+                height={2048}
                 caption="Logo system (primary stamp and ATC monogram), clear space, palette, type, brand elements, and applications: shop sign, business card, work shirts, vehicle graphics, branding iron, and social avatar. Click to view full size."
               />
             </div>
