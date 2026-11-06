@@ -4,7 +4,7 @@ import styles from './SelectedWork.module.css';
 
 const pieces = [
   {
-    src: '/images/atc/final-board.png',
+    src: '/images/atc/final-board-2026.png',
     alt: 'Appalachian Timber Co. final identity board: stamp logo, ATC monogram, palette, typography, and applications',
     title: 'Appalachian Timber Co.',
     label: 'Case study · Brand identity',
