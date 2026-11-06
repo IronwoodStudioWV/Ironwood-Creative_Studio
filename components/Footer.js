@@ -7,7 +7,7 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.brand}>
           <Image
-            src="/images/ironwood-logo.png"
+            src="/images/ironwood-logo-light.png"
             alt="Ironwood Creative Studio logo"
             width={72}
             height={72}
