@@ -56,7 +56,7 @@ export default function Creatures() {
         <p className={styles.kicker}>Character work</p>
         <h2>The Creatures</h2>
         <p className={styles.lede}>
-          Original characters and mascots — the work Ironwood is known for.
+          Original characters and mascots — where Ironwood got its start.
           Every business deserves a face. These are ours.
         </p>
         <Link href="/apple-of-my-eye" className={styles.featured}>

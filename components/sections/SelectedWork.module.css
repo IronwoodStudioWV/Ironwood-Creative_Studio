@@ -33,7 +33,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -86,4 +86,26 @@
   .selected {
     padding: 4rem 1.25rem;
   }
+}
+
+.more {
+  display: inline-block;
+  margin-top: 0.9rem;
+  font-weight: 600;
+  color: var(--bronze);
+}
+
+.more:hover,
+.allWork:hover {
+  color: var(--walnut);
+}
+
+.allWork {
+  display: inline-block;
+  margin-top: 2.5rem;
+  padding: 0.85rem 1.6rem;
+  border: 2px solid var(--bronze);
+  border-radius: 4px;
+  font-weight: 600;
+  color: var(--bronze);
 }
