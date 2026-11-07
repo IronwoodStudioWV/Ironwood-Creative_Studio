@@ -40,7 +40,7 @@ export const metadata = {
 const socials = [{ label: 'Instagram', href: 'https://www.instagram.com/ironwood_creative_studio' }];
 
 const episodes = [
-  { num: 'Pilot', title: 'The Apple Doesn’t Fall Far', status: 'Premiering here first', blurb: 'The rotten family meets the five-fingered shadow.' },
+  { num: 'Pilot', title: 'The Apple Doesn’t Fall Far', status: 'Watch now', blurb: 'The rotten family meets the five-fingered shadow.' },
   { num: 'Episode 1', title: 'The Five-Finger Death Pull', status: 'Coming soon', blurb: 'The giant hand reaches in. Pip, a cat, and a drain are involved.' },
   { num: 'Episode 2', title: 'Sub-Zero Heroes', status: 'Coming soon', blurb: 'More chaos from the back of the fridge.' },
   { num: 'Episode 3', title: 'Door Rack High Society', status: 'Coming soon', blurb: 'The door rack standoff.' },
@@ -117,7 +117,7 @@ export default function AppleOfMyEyePage() {
             My Eye
           </h1>
           <p className={styles.tagline}>
-            <span className={styles.pill}>Pilot &middot; Coming soon</span>
+            <span className={styles.pill}>Pilot &middot; Now streaming</span>
             &ldquo;The Apple Doesn&rsquo;t Fall Far&rdquo;
           </p>
 
@@ -161,21 +161,22 @@ export default function AppleOfMyEyePage() {
               <footer>Granny Smith</footer>
             </blockquote>
 
-            <h3 className={styles.teaserHeading}>Watch the pilot teaser</h3>
+            <h3 id="watch-pilot" className={styles.teaserHeading}>Watch the full pilot</h3>
             <div className={styles.videoFrame}>
               <video
                 className={styles.video}
                 controls
                 playsInline
                 preload="metadata"
-                poster="/apple-of-my-eye/pilot-teaser-poster.jpg"
-                aria-label="Apple of My Eye pilot teaser"
+                poster="/apple-of-my-eye/pilot-poster.jpg"
+                aria-label="Apple of My Eye pilot episode, The Apple Doesn't Fall Far"
               >
-                <source src="/apple-of-my-eye/pilot-teaser.mp4" type="video/mp4" />
+                <source src="/apple-of-my-eye/pilot.mp4" type="video/mp4" />
                 Your browser can&rsquo;t play this video.{' '}
-                <a href="/apple-of-my-eye/pilot-teaser.mp4">Download the teaser</a>.
+                <a href="/apple-of-my-eye/pilot.mp4">Download the pilot</a>.
               </video>
             </div>
+            <p className={styles.pilotText}>Rated TV-14 for language and rotten behavior.</p>
           </div>
         </section>
 
