@@ -271,6 +271,9 @@ export default function AppleOfMyEyePage() {
               <Link href="/#contact" className={socials.length ? styles.buttonGhost : styles.buttonPrimary}>
                 Get in touch
               </Link>
+              <Link href="/shop#bad-apple" className={styles.buttonGhost}>
+                Shop the merch
+              </Link>
               <Link href="/#creatures" className={styles.buttonGhost}>
                 More Ironwood characters
               </Link>

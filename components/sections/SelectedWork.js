@@ -13,6 +13,15 @@ const pieces = [
     cta: 'Read the case study →',
   },
   {
+    src: '/apple-of-my-eye/cast-banner.jpg',
+    alt: 'The Apple of My Eye cast: a family of rotting fruit and vegetables',
+    title: 'Apple of My Eye',
+    label: 'Original IP · Animated series',
+    text: 'An adult dark-comedy cartoon I created: characters, voices, and a pilot episode released on this site. Merch is in the shop.',
+    href: '/apple-of-my-eye',
+    cta: 'Watch the pilot →',
+  },
+  {
     src: '/images/merritt-group.png',
     alt: 'Merritt Group — student logo project, interlocking MG monogram',
     title: 'Merritt Group',
