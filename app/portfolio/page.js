@@ -88,6 +88,60 @@ const otherWork = [
     text: 'A retro-poster campaign exploration: a dancing-piston mascot, a two-color palette of mustard on deep navy, a worn print texture, and punchy copy built to read at a glance.',
   },
   {
+    src: '/apple-of-my-eye/cast-banner.jpg',
+    alt: 'The Apple of My Eye cast: a family of rotting fruit and vegetables',
+    width: 1280,
+    height: 720,
+    title: 'Apple of My Eye',
+    label: 'Original IP · Animated series · 2026',
+    text: 'An adult dark-comedy cartoon I created, written, and art-directed: a dysfunctional family living in a refrigerator crisper drawer. I developed the cast, voices, and world, released the pilot on this site, and am building the series. Character art was developed with AI tools under my art direction.',
+  },
+  {
+    src: '/images/bad-apple.jpg',
+    alt: 'Bad Apple, a gnawed apple core in boxing gloves',
+    width: 1371,
+    height: 1600,
+    title: 'Bad Apple (Bart)',
+    label: 'Character design',
+    text: 'The lead of the series: a gnawed-down apple core with a permanent snarl. He started as a doodle and grew into a full character with a model sheet, voice, and a world to live in.',
+  },
+  {
+    src: '/images/bad-seed.jpg',
+    alt: 'Bad Seed shown in rendered and line-art styles side by side',
+    width: 1600,
+    height: 705,
+    title: 'Bad Seed',
+    label: 'Character design',
+    text: 'Bad Apple’s spitfire oldest son, shown in rendered and line-art treatments. The line-art version is built for merch and one-color print.',
+  },
+  {
+    src: '/images/bad-apple-tee.png',
+    alt: '#1 Bad Apple typographic t-shirt design',
+    width: 3213,
+    height: 3782,
+    title: 'Bad Apple Merch',
+    label: 'Apparel & product graphics',
+    text: 'Typographic and character graphics for tees, mugs, and stickers. Take a look at the shop.',
+  },
+  {
+    src: '/images/dusty.jpg',
+    alt: 'Dusty, a friendly blue vacuum cleaner mascot',
+    width: 1408,
+    height: 768,
+    title: 'Dusty',
+    label: 'Concept · Mascot',
+    text: 'A cheerful vacuum mascot built for product branding and family-friendly businesses.',
+  },
+  {
+    src: '/images/warhead.png',
+    alt: 'Warhead, a bomb character riding itself with a cigar in its mouth',
+    width: 1408,
+    height: 768,
+    title: 'Warhead',
+    label: 'Concept · Mascot',
+    text: 'Rat-rod and lowbrow attitude for brands like skate shops, taprooms, and garages.',
+  },
+  {
     src: '/images/blacksheep.png',
     alt: 'Blacksheep Restaurant Maids vintage sheep mascot logo',
     width: 1024,
@@ -281,7 +335,8 @@ export default function PortfolioPage() {
             </div>
             <p className={styles.range}>
               Range: I also design original characters and mascots, including my
-              animated series. <Link href="/#creatures">See the Creatures →</Link>
+              animated series. <Link href="/apple-of-my-eye">Watch the pilot →</Link>{' '}
+              <Link href="/shop">Shop the merch →</Link>
             </p>
           </div>
         </section>

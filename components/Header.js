@@ -33,6 +33,7 @@ export default function Header() {
           <Link href="/#services" onClick={() => setIsOpen(false)}>Services</Link>
           <Link href="/#creatures" onClick={() => setIsOpen(false)}>Creatures</Link>
           <Link href="/apple-of-my-eye" onClick={() => setIsOpen(false)}>Apple of My Eye</Link>
+          <Link href="/shop" onClick={() => setIsOpen(false)}>Shop</Link>
           <Link href="/#about" onClick={() => setIsOpen(false)}>About</Link>
           <Link href="/#contact" onClick={() => setIsOpen(false)}>Contact</Link>
         </nav>
