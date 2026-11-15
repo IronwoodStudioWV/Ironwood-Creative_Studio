@@ -41,7 +41,7 @@ const socials = [{ label: 'Instagram', href: 'https://www.instagram.com/ironwood
 
 const episodes = [
   { num: 'Pilot', title: 'The Apple Doesn’t Fall Far', status: 'Watch now', blurb: 'The rotten family meets the five-fingered shadow.' },
-  { num: 'Episode 1', title: 'The Five-Finger Death Pull', status: 'Coming soon', blurb: 'The giant hand reaches in. Pip, a cat, and a drain are involved.' },
+  { num: 'Episode 1', title: 'The Five-Finger Death Pull', status: 'Sat Nov 28 · 12:08 AM', blurb: 'The giant hand reaches in. Pip, a cat, and a drain are involved.' },
   { num: 'Episode 2', title: 'Sub-Zero Heroes', status: 'Coming soon', blurb: 'More chaos from the back of the fridge.' },
   { num: 'Episode 3', title: 'Door Rack High Society', status: 'Coming soon', blurb: 'The door rack standoff.' },
 ];
@@ -197,6 +197,25 @@ export default function AppleOfMyEyePage() {
                 </li>
               ))}
             </ul>
+
+            <aside className={styles.updateNote} aria-labelledby="update-heading">
+              <p className={styles.updateKicker}>Production update</p>
+              <h3 id="update-heading" className={styles.updateTitle}>
+                Episode 1 is moving to Saturday, Nov 28
+              </h3>
+              <p>
+                Episode 1 was supposed to air Saturday, Nov 14. It didn&rsquo;t, and that&rsquo;s on
+                me. After the pilot, I decided the show deserved a bigger look: glossy, feature-film
+                3D, where the food has real bruises, mold fuzz and condensation, and the faces stay
+                cartoon-simple. That means remaking the whole episode shot by shot instead of
+                polishing the flat version, and it&rsquo;s a lot more work than I planned for.
+              </p>
+              <p>
+                The new air date is <strong>Saturday, Nov 28 at 12:08 AM</strong> (late Friday
+                night, Nov 27). Every episode premieres here first. Follow the studio on Instagram
+                and you&rsquo;ll hear the moment it drops.
+              </p>
+            </aside>
           </div>
         </section>
 

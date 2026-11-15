@@ -234,6 +234,37 @@
   text-transform: uppercase;
 }
 
+.updateNote {
+  margin-top: 2.5rem;
+  max-width: 760px;
+  background: var(--paper);
+  color: var(--ink);
+  border: 4px solid var(--ink);
+  border-radius: 16px;
+  box-shadow: 6px 6px 0 var(--red);
+  padding: 1.5rem 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  line-height: 1.6;
+}
+
+.updateKicker {
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6a1815;
+}
+
+.updateTitle {
+  font-family: 'Arial Black', 'Impact', Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  line-height: 1.15;
+}
+
 /* ---------- Cast ---------- */
 
 .castSection {
