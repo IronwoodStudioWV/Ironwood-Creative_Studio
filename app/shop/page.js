@@ -1,8 +1,8 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { collections } from './products';
+import ProductArt from './ProductArt';
 import styles from './page.module.css';
 
 const TITLE = 'Shop — Bad Apple & Ironwood Merch | Ironwood Creative Studio';
@@ -32,17 +32,7 @@ function ProductCard({ p }) {
   const live = Boolean(p.buyUrl);
   return (
     <article className={`${styles.card} ${p.wide ? styles.cardWide : ''}`}>
-      <div className={`${styles.art} ${p.wide ? styles.artWide : ''}`}>
-        <span className={styles.badge}>{p.type}</span>
-        <Image
-          src={p.image}
-          alt={p.alt}
-          width={p.wide ? 800 : 500}
-          height={p.wide ? 400 : 500}
-          sizes="(max-width: 700px) 90vw, 320px"
-          style={{ objectFit: 'contain', width: '100%', height: '100%' }}
-        />
-      </div>
+      <ProductArt p={p} />
       <div className={styles.body}>
         <h3>{p.name}</h3>
         <p>{p.blurb}</p>

@@ -156,6 +156,47 @@
   justify-content: center;
 }
 
+.artPhoto {
+  padding: 0;
+}
+
+.artPhoto img {
+  display: block;
+}
+
+.views {
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.75rem;
+  z-index: 1;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.view {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.view:hover,
+.view:focus-visible {
+  opacity: 1;
+  outline: 2px solid #ffd23f;
+  outline-offset: 2px;
+}
+
+.viewActive {
+  border-color: #ffd23f;
+  opacity: 1;
+}
+
 .cardWide {
   grid-column: span 2;
 }
