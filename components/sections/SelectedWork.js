@@ -13,6 +13,15 @@ const pieces = [
     cta: 'Read the case study →',
   },
   {
+    src: '/images/redtail/logo-system.jpg',
+    alt: 'Redtail Outfitters logo system: circular hawk badge, secondary mark, variations, and tagline lockup',
+    title: 'Redtail Outfitters',
+    label: 'Case study · Brand identity & print',
+    text: 'A river outfitter identity built for the outdoors: hawk badge, locked palette and type, and print collateral from trailhead signs to rental gear tags and waivers.',
+    href: '/portfolio#redtail-outfitters',
+    cta: 'Read the case study →',
+  },
+  {
     src: '/apple-of-my-eye/cast-banner.jpg',
     alt: 'The Apple of My Eye cast: a family of rotting fruit and vegetables',
     title: 'Apple of My Eye',

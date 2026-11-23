@@ -119,6 +119,10 @@
   font-size: 0.97rem;
 }
 
+.divided {
+  border-top: 1px solid #e3d6bd;
+}
+
 .block {
   margin-top: 4.5rem;
   scroll-margin-top: 90px;
@@ -161,6 +165,10 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin: 1.5rem 0;
+}
+
+.cards.cardsWide {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .card {
@@ -366,5 +374,9 @@
 
   .section h2 {
     font-size: 2rem;
+  }
+
+  .cards.cardsWide {
+    grid-template-columns: 1fr;
   }
 }
