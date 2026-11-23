@@ -6,7 +6,7 @@ import styles from './page.module.css';
 
 const TITLE = 'Portfolio — Joshua Mitchell | Ironwood Creative Studio';
 const DESCRIPTION =
-  'Brand identity portfolio of Joshua Mitchell, graphic design student at SNHU and founder of Ironwood Creative Studio. Featuring the Appalachian Timber Co. identity case study.';
+  'Brand identity portfolio of Joshua Mitchell, graphic design student at SNHU and founder of Ironwood Creative Studio. Featuring the Appalachian Timber Co. and Redtail Outfitters identity case studies.';
 
 export const metadata = {
   metadataBase: new URL('https://ironwoodcreativestudio.shop'),
@@ -35,9 +35,9 @@ export const metadata = {
   },
 };
 
-function Shot({ src, alt, width, height, caption, priority }) {
+function Shot({ src, alt, width, height, caption, priority, maxWidth }) {
   return (
-    <figure className={styles.shot}>
+    <figure className={styles.shot} style={maxWidth ? { maxWidth } : undefined}>
       <a href={src} target="_blank" rel="noopener noreferrer" aria-label={`Open full size: ${alt}`}>
         <Image
           src={src}
@@ -66,6 +66,20 @@ const palette = [
   { name: 'Ironwood Brown', hex: '#6A4A2F' },
   { name: 'Slate Charcoal', hex: '#2E3135' },
   { name: 'Mountain Cream', hex: '#F2ECE2' },
+];
+
+const redtailPalette = [
+  { name: 'Shoal Aqua', hex: '#5CB3AC', cmyk: '62 · 11 · 34 · 0' },
+  { name: 'Canyon Rust', hex: '#C85A28', cmyk: '16 · 76 · 93 · 4' },
+  { name: 'Slate Stone', hex: '#3B4346', cmyk: '72 · 60 · 56 · 44' },
+  { name: 'Basecamp Cream', hex: '#F4EFE4', cmyk: '4 · 5 · 10 · 0' },
+];
+
+const redtailPrint = [
+  { title: 'Trailhead signage & river conditions board', spec: 'Two 36″ × 48″ panels, aluminum composite with matte UV laminate, timber-framed. Swappable gauge, flow, water-temp and status slots; safety rules; route and check-in panel with a New River Gorge map card.' },
+  { title: 'Basecamp rack card & pocket river guide', spec: '4″ × 9″ two-sided rack card on 14–16 pt matte cover. Tri-fold waterproof river guide on tear-resistant synthetic stock with a topographic put-in / take-out spread.' },
+  { title: 'Rental check-out tag & gear inspection card', spec: '3.5″ × 7″ die-cut synthetic tag with reinforced grommet (hull, PFD, paddle checks). 6″ × 4″ shop card: pass, repair, out of service.' },
+  { title: 'Guest check-in & liability waiver', spec: '8.5″ × 11″ on uncoated cream 70 lb stock to cut sun glare on clipboards. Participant details, safety acknowledgments, release text at 8.5–9 pt, signature and emergency contact.' },
 ];
 
 const otherWork = [
@@ -170,7 +184,8 @@ export default function PortfolioPage() {
               and a website — not just on a presentation board.
             </p>
             <div className={styles.jump}>
-              <a href="#appalachian-timber">Case study</a>
+              <a href="#appalachian-timber">Appalachian Timber Co.</a>
+              <a href="#redtail-outfitters">Redtail Outfitters</a>
               <a href="#selected-work">Selected work</a>
               <a href="#process">How I work</a>
               <a href="#contact">Contact</a>
@@ -318,6 +333,130 @@ export default function PortfolioPage() {
           </div>
         </section>
 
+        {/* Case study 2 */}
+        <section id="redtail-outfitters" className={`${styles.section} ${styles.divided}`}>
+          <div className={styles.container}>
+            <p className={styles.kicker}>Case study · Brand identity &amp; print collateral</p>
+            <h2>Redtail Outfitters</h2>
+            <p className={styles.note}>
+              Student concept project · A guided whitewater, fishing, and
+              kayak-rental outfitter on West Virginia&rsquo;s New River and Elk
+              corridor (est. 2009). Fictional client.
+            </p>
+
+            <div className={styles.three}>
+              <div>
+                <h3>The brief</h3>
+                <p>An identity that works as hard as the guides: on a trailhead sign in the rain, a tag clipped to a rental paddle, and a waiver on a sun-bleached clipboard.</p>
+              </div>
+              <div>
+                <h3>The direction</h3>
+                <p>Expert-led. River-born. Appalachian proud. A heritage badge with a red-tailed hawk over river current, a condensed headline face, and a palette pulled from the water, the canyon walls, and the slate.</p>
+              </div>
+              <div>
+                <h3>The deliverables</h3>
+                <p>Logo system, locked palette and type, and four print suites: trailhead signage, rack card and river guide, rental tags and inspection cards, and a check-in waiver.</p>
+              </div>
+            </div>
+
+            <div className={styles.block}>
+              <p className={styles.step}>01 · Logo exploration</p>
+              <h3 className={styles.blockTitle}>One badge to lead, a family to support it.</h3>
+              <Shot
+                src="/images/redtail/logo-system.jpg"
+                alt="Redtail Outfitters logo system board: circular hawk badge, hawk-and-mountain secondary mark, color variations, tagline lockup, shield, wordmark, feather mark, clear space and minimum size"
+                width={1024}
+                height={572}
+                caption="Primary badge, hawk-and-mountain secondary mark, one-color and reversed variations, tagline lockup, exploration marks, a 1× clear-space rule, and a 1.0″ minimum size."
+              />
+            </div>
+
+            <div className={styles.block}>
+              <p className={styles.step}>02 · Final badge</p>
+              <h3 className={styles.blockTitle}>Built to sit on dark or light.</h3>
+              <div className={styles.two}>
+                <Shot src="/images/redtail/badge-slate.png" alt="Redtail Outfitters final badge in cream and rust on Slate Stone" width={1024} height={1024} maxWidth={400} caption="Primary: Basecamp Cream and Canyon Rust on Slate Stone." />
+                <Shot src="/images/redtail/badge-aqua.png" alt="Redtail Outfitters final badge in slate and rust on Shoal Aqua" width={1024} height={1024} maxWidth={400} caption="Light version: Slate Stone and Canyon Rust on Shoal Aqua." />
+              </div>
+              <p className={styles.body}>
+                The final badge simplifies the illustrated hawk to a flat
+                silhouette with a rust tail, so it holds up at small sizes, in
+                one-color print, and as a stamp or embroidery. An earlier round
+                ran it in a dark green that wasn&rsquo;t in the palette; I brought
+                it back to the locked colors.
+              </p>
+            </div>
+
+            <div className={styles.block}>
+              <p className={styles.step}>03 · Color &amp; type</p>
+              <h3 className={styles.blockTitle}>Four aquas tested, one locked.</h3>
+              <Shot
+                src="/images/redtail/palette-exploration.jpg"
+                alt="Palette exploration: River Mist, Shoal Aqua, Appalachian Fog, and Headwater Teal, each paired with rust, slate, and cream"
+                width={1024}
+                height={572}
+                caption="River Mist, Shoal Aqua, Appalachian Fog, and Headwater Teal, tested against the same rust, slate, and cream. Shoal Aqua read brightest without losing the river."
+              />
+              <div className={styles.two}>
+                <div>
+                  <h4>Locked palette</h4>
+                  <div className={styles.swatches}>
+                    {redtailPalette.map((c) => (
+                      <div key={c.hex}>
+                        <div className={styles.swatch} style={{ background: c.hex }} />
+                        <p className={styles.swLabel}><b>{c.name}</b><br />{c.hex}<br />CMYK {c.cmyk}</p>
+                      </div>
+                    ))}
+                  </div>
+                  <h4>Typography</h4>
+                  <p className={styles.body}><b>Bebas Neue</b> for headlines: all caps, with the presence a sign board needs. <b>Barlow SemiBold</b> for body: legible on safety checklists, maps, and legal forms.</p>
+                </div>
+                <div>
+                  <h4>Contrast rule</h4>
+                  <ul className={styles.list}>
+                    <li>No small cream or white text directly on Shoal Aqua; it washes out in daylight.</li>
+                    <li>Shoal Aqua backgrounds always pair with Slate Stone type, outlines, and badges.</li>
+                    <li>Basecamp Cream type is reserved for solid Slate Stone or Canyon Rust blocks.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.block}>
+              <p className={styles.step}>04 · Print collateral</p>
+              <h3 className={styles.blockTitle}>Designed for wet hands and bright sun.</h3>
+              <Shot
+                src="/images/redtail/gear-tag-inspection-card.jpg"
+                alt="Redtail rental check-out tag with hull, PFD, and paddle checkboxes, and a gear inspection card with pass, repair, and out-of-service boxes"
+                width={1024}
+                height={572}
+                caption="Rental check-out tag and gear inspection card."
+              />
+              <div className={`${styles.cards} ${styles.cardsWide}`}>
+                {redtailPrint.map((p) => (
+                  <div key={p.title} className={styles.card}>
+                    <h4>{p.title}</h4>
+                    <p>{p.spec}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className={styles.block}>
+              <p className={styles.step}>05 · Applications</p>
+              <h3 className={styles.blockTitle}>Out in the world.</h3>
+              <Shot
+                src="/images/redtail/applications.jpg"
+                alt="Redtail mockups: basecamp sign, rack card, guide shirt, vehicle graphics, gear tag, and pocket river guide"
+                width={1024}
+                height={101}
+                maxWidth={1024}
+                caption="Basecamp sign · Rack card · Guide shirt · Vehicle graphics · Gear tag · Pocket river guide."
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Other work */}
         <section id="selected-work" className={`${styles.section} ${styles.alt}`}>
           <div className={styles.container}>
@@ -357,9 +496,9 @@ export default function PortfolioPage() {
                 </p>
                 <p className={styles.body}>
                   I&rsquo;m upfront about it because clients and teams deserve
-                  to know how the work was made. Appalachian Timber Co. is a
-                  fictional client; the brief and outcome are part of a student
-                  concept project.
+                  to know how the work was made. Appalachian Timber Co. and
+                  Redtail Outfitters are fictional clients; the briefs and
+                  outcomes are part of student concept projects.
                 </p>
               </div>
               <div>
